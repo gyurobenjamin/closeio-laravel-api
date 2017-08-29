@@ -31,69 +31,69 @@ Next add the following to the `aliases` array in your `config/app.php`
 ```
 $client = new CloseioClient(); // Create a new Closeio Instance.
 
-$client->lead->get(); // Retrieve a single lead
-$client->lead->search(); // List or search for leads
-$client->lead->delete($id); // Delete a lead
-$client->lead->update(); // Update an existing lead
-$client->lead->create(); // Create a new lead
+list($lead, $error) = $client->lead->get($id); // Retrieve a single lead
+list($leads, $error) = $client->lead->search($whateverString); // List or search for leads
+list($result, $error) = $client->lead->delete($id); // Delete a lead
+list($lead, $error) = $client->lead->update($id, $newLead); // Update an existing lead
+list($lead, $error) = $client->lead->create($lead); // Create a new lead
 ```
 #### Contacts
 ```
 $client = new CloseioClient(); // Create a new Closeio Instance.
 
-$client->contact->get(); // Retrieve a single contact
-$client->contact->search(); // List or search for contact
-$client->contact->delete(); // Delete a contact
-$client->contact->update(); // Update an existing contact
-$client->contact->create(); // Create a new contact
+list($contact, $error) = $client->contact->get($id); // Retrieve a single contact
+list($contacts, $error) = $client->contact->search($whateverString); // List or search for contact
+list($result, $error) = $client->contact->delete($id); // Delete a contact
+list($contact, $error) = $client->contact->update($id, $newContact); // Update an existing contact
+list($contact, $error) = $client->contact->create($contact); // Create a new contact
 ```
 #### Activities
 ```
 $client = new CloseioClient(); // Create a new Closeio Instance.
 
-$client->activity->get(); // Retrieve a single activity
-$client->activity->search(); // List or search for activity
-$client->activity->delete(); // Delete a activity
-$client->activity->update(); // Update an existing activity
-$client->activity->create(); // Create a new activity
+list($activity, $error) = $client->activity->get($id); // Retrieve a single activity
+list($activities, $error) = $client->activity->search($whateverString); // List or search for activity
+list($result, $error) = $client->activity->delete($id); // Delete a activity
+list($activity, $error) = $client->activity->update($id, $newActivity); // Update an existing activity
+list($activity, $error) = $client->activity->create($activity); // Create a new activity
 ```
 #### Opportunities
 ```
 $client = new CloseioClient(); // Create a new Closeio Instance.
 
-$client->opportunity->get(); // Retrieve a single opportunity
-$client->opportunity->search(); // List or search for opportunity
-$client->opportunity->delete(); // Delete a opportunity
-$client->opportunity->update(); // Update an existing opportunity
-$client->opportunity->create(); // Create a new opportunity
+list($opportunity, $error) = $client->opportunity->get($id); // Retrieve a single opportunity
+list($opportunities, $error) = $client->opportunity->search($whateverString); // List or search for opportunity
+list($result, $error) = $client->opportunity->delete($id); // Delete an opportunity
+list($opportunity, $error) = $client->opportunity->update($id, $newOpp); // Update an existing opportunity
+list($opportunity, $error) = $client->opportunity->create($opp); // Create a new opportunity
 ```
 #### Tasks
 ```
 $client = new CloseioClient(); // Create a new Closeio Instance.
 
-$client->task->get(); // Retrieve a single task
-$client->task->search(); // List or search for task
-$client->task->delete(); // Delete a task
-$client->task->update(); // Update an existing task
-$client->task->create(); // Create a new task
+list($task, $error) = $client->task->get($id); // Retrieve a single task
+list($tasks, $error) = $client->task->search($whateverString); // List or search for task
+list($result, $error) = $client->task->delete($id); // Delete a task
+list($task, $error) = $client->task->update($id, $newTask); // Update an existing task
+list($task, $error) = $client->task->create($task); // Create a new task
 ```
 #### Users
 ```
 $client = new CloseioClient(); // Create a new Closeio Instance.
 
-$client->user->get(); // Retrieve a single user
-$client->user->search(); // List or search for user
-$client->user->delete(); // Delete a user
-$client->user->update(); // Update an existing user
-$client->user->create(); // Create a new user
+list($user, $error) = $client->user->get($id); // Retrieve a single user
+list($users, $error) = $client->user->search($whateverString); // List or search for user
+list($result, $error) = $client->user->delete($id); // Delete a user
+list($user, $error) = $client->user->update($id, $newUser); // Update an existing user
+list($user, $error) = $client->user->create($user); // Create a new user
 ```
 #### Organizations
 ```
 $client = new CloseioClient(); // Create a new Closeio Instance.
 
-$client->organization->get(); // Retrieve a single organization
-$client->organization->search(); // List or search for organization
-$client->organization->delete(); // Delete a organization
-$client->organization->update(); // Update an existing organization
-$client->organization->create(); // Create a new organization
+list($org, $error) = $client->organization->get($id); // Retrieve a single organization
+list($orgs, $error) = $client->organization->search($whateverString); // List or search for organization
+list($result, $error) = $client->organization->delete($id); // Delete a organization
+list($org, $error) = $client->organization->update($id, $newOrg); // Update an existing organization
+list($org, $error) = $client->organization->create($org); // Create a new organization
 ```
