@@ -1,0 +1,45 @@
+{
+    "name": "kyranb/footprints",
+    "type": "library",
+    "description": "Close.io API wrapper for Laravel",
+    "keywords": [
+        "close",
+        "close.io",
+        "laravel",
+        "api",
+    ],
+    "homepage": "https://github.com/gyurobenjamin/closeio-laravel-api",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Benjamin Gyuro",
+            "email": "gyurobenjamin@gmail.com"
+        }
+    ],
+    "require": {
+        "illuminate/support": "~5.2|~5.3",
+        "php" : "~5.5|~7.0"
+    },
+    "require-dev": {
+        "laravel/framework": "5.1",
+        "phpunit/phpunit" : "4.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Gyurobenjamin\\CloseioLaravelApi\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Gyurobenjamin\\CloseioLaravelApi\\Test\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    }
+}
