@@ -6,7 +6,7 @@
         "close",
         "close.io",
         "laravel",
-        "api",
+        "api"
     ],
     "homepage": "https://github.com/gyurobenjamin/closeio-laravel-api",
     "license": "MIT",
