@@ -6,10 +6,8 @@ Laravel API Client for Close.io http://developer.close.io/
 
 Install via composer - edit your `composer.json` to require the package.
 
-```js
-"require": {
-    "gyurobenjamin/closeio-laravel-api": ""
-}
+```
+composer require gyurobenjamin/closeio-laravel-api
 ```
 
 ## Laravel
